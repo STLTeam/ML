@@ -70,3 +70,7 @@ def get_recommendations():
     # Convert int64 values to regular Python integers
     id_values = [int(i) for i in ids]
     return jsonify({"names": names, "posters": posters, "id": id_values})
+
+
+if __name__ == "__main__":
+    app.run(debug=False, host='0.0.0.0')
